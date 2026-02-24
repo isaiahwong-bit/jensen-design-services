@@ -1,0 +1,69 @@
+/* ============================================
+   Category Page - Supplementary Styles
+   ============================================ */
+
+/* --- Hero images section --- */
+.category-hero-images {
+  padding: var(--space-2xl) 0;
+  background: var(--bg-alt);
+  border-bottom: 1px solid var(--border);
+}
+
+/* --- Main content area --- */
+.category-content {
+  padding: var(--space-3xl) 0;
+}
+
+.category-content .product-subsection {
+  padding-bottom: var(--space-2xl);
+  margin-bottom: var(--space-2xl);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.category-content .product-subsection:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* --- Not found state --- */
+.category-not-found {
+  text-align: center;
+  padding: var(--space-4xl) var(--space-lg);
+}
+
+.category-not-found h2 {
+  font-size: var(--fs-3xl);
+  font-weight: 800;
+  color: var(--secondary);
+  margin-bottom: var(--space-md);
+}
+
+.category-not-found p {
+  color: var(--text-secondary);
+  margin-bottom: var(--space-xl);
+  font-size: var(--fs-lg);
+}
+
+/* --- Section icon in hero --- */
+.category-icon {
+  width: 64px;
+  height: 64px;
+  min-width: 64px;
+  border-radius: var(--radius-lg);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--space-lg);
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .category-hero-images {
+    padding: var(--space-lg) 0;
+  }
+
+  .category-content {
+    padding: var(--space-2xl) 0;
+  }
+}

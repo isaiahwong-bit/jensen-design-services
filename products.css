@@ -217,6 +217,21 @@
   max-width: 700px;
 }
 
+.product-section__view-all {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: var(--space-sm);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  color: var(--primary);
+  transition: color var(--duration);
+}
+
+.product-section__view-all:hover {
+  color: var(--primary-dark);
+}
+
 /* Product Section Hero Images */
 .product-section__hero-image {
   display: grid;
