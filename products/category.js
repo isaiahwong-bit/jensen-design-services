@@ -6,9 +6,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const data = window.FOAMICO_PRODUCTS;
   if (!data) return;
 
-  // Determine category from URL query parameter
+  // Determine category from URL path or query parameter
+  // Vercel rewrites /products/mobile → /products/category?cat=mobile
+  // but browser URL stays as /products/mobile, so window.location.search is empty.
+  // Parse from path first, fall back to query param.
   const params = new URLSearchParams(window.location.search);
-  const categorySlug = params.get('cat');
+  const pathSegments = window.location.pathname.replace(/\/$/, '').split('/');
+  const lastSegment = pathSegments[pathSegments.length - 1];
+  const categorySlug = params.get('cat') || (data.categories[lastSegment] ? lastSegment : null);
 
   if (!categorySlug || !data.categories[categorySlug]) {
     renderNotFound();
