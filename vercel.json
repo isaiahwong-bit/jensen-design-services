@@ -6,13 +6,13 @@
   "trailingSlash": false,
   "framework": null,
   "rewrites": [
-    { "source": "/products/mainstations", "destination": "/products/category.html?cat=mainstations" },
-    { "source": "/products/satellites", "destination": "/products/category.html?cat=satellites" },
-    { "source": "/products/boosters", "destination": "/products/category.html?cat=boosters" },
-    { "source": "/products/automatic", "destination": "/products/category.html?cat=automatic" },
-    { "source": "/products/mobile", "destination": "/products/category.html?cat=mobile" },
-    { "source": "/products/prediluted", "destination": "/products/category.html?cat=prediluted" },
-    { "source": "/products/accessories", "destination": "/products/category.html?cat=accessories" }
+    { "source": "/products/mainstations", "destination": "/products/category?cat=mainstations" },
+    { "source": "/products/satellites", "destination": "/products/category?cat=satellites" },
+    { "source": "/products/boosters", "destination": "/products/category?cat=boosters" },
+    { "source": "/products/automatic", "destination": "/products/category?cat=automatic" },
+    { "source": "/products/mobile", "destination": "/products/category?cat=mobile" },
+    { "source": "/products/prediluted", "destination": "/products/category?cat=prediluted" },
+    { "source": "/products/accessories", "destination": "/products/category?cat=accessories" }
   ],
   "headers": [
     {
