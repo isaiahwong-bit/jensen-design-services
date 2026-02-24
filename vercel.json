@@ -4,6 +4,7 @@
   "outputDirectory": ".",
   "cleanUrls": true,
   "trailingSlash": false,
+  "framework": null,
   "rewrites": [
     { "source": "/products/mainstations", "destination": "/products/category.html?cat=mainstations" },
     { "source": "/products/satellites", "destination": "/products/category.html?cat=satellites" },
